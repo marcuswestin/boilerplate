@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+# This hook is called on `git commit -m "commit msg"`, before the committed changes are actually applied.
+# If this hook exits with a non-0 code, the commit does not get applied.
+
+echo "*** misc/automate/git-hooks/pre-commit RUN TESTS"
+echo "TODO: bash scripts/tests/run-tests.sh"

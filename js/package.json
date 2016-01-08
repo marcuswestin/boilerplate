@@ -1,0 +1,25 @@
+// Delete this comment and then run `npm update --save`
+{
+  "name": "ProjectName",
+  "version": "0.0.0",
+  "description": "ProjectName",
+  "repository": "projectname",
+  "private": true,
+  "license": "UNLICENSED",
+  "dependencies": {
+    "asyncawait": "*",
+    "autoreact": "*",
+    "babel-preset-es2015": "*",
+    "babelify": "*",
+    "bluebird": "*",
+    "browserify": "*",
+    "budo": "*",
+    "lodash": "*",
+    "tags": "*"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  }
+}

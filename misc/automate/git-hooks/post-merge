@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+# This hook is called after a merge (e.g if `git pull` contains changes).
+
+echo "*** misc/automate/git-hooks/post-merge: RUN setup-tools.sh"
+bash $PROJECTNAME_ROOT/misc/automate/setup-tools.sh

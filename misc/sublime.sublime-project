@@ -1,0 +1,22 @@
+{
+	"settings": {
+		"tab_size": 4
+	},
+	"folders": [{}
+		// JS
+		, { "name": "js/projectname",     "path": "../js/projectname", "folder_exclude_patterns": ["node_modules"] }
+		
+		// Go
+		, { "name": "go/src/projectname", "path": "../go/src/projectname" }
+		, { "name": "go/src/github.com",  "path": "../go/src/github.com", "file_exclude_patterns": ["*.js", "*.html"] }
+		
+		// Python
+		, { "name": "py/projectname",     "path": "../py/projectname" }
+		
+		// Scripts
+		, { "name": "scripts",            "path": "../scripts" }
+		
+		// Misc
+		, { "name": "misc",               "path": "../misc", "file_exclude_patterns": ["*.sublime-workspace", "*.tmproj"]}
+	]
+}

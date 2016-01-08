@@ -1,0 +1,3 @@
+#!/bin/bash
+
+open "$PROJECTNAME_ROOT/misc/automate/sublime.sublime-project"
