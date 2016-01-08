@@ -3,7 +3,7 @@
 import os
 
 def main():
-	print 'python script boilerplate'
 	os.chdir(os.environ['PROJECTNAME_ROOT'])
+	print 'python script boilerplate'
 
 main()

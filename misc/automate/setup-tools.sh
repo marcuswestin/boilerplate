@@ -1,5 +1,7 @@
-set -e
-cd ${PROJECTNAME_ROOT}
+#!/bin/bash
+set -e                    # Always die on error
+trap 'kill -HUP 0' SIGINT # Kill sub-processes when we're killed
+cd "$PROJECTNAME_ROOT"    # Start script in project root
 
 _install_if_not_exists () {
 	if [[ ! `which ${1}` ]]; then
