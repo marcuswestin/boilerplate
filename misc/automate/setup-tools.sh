@@ -5,7 +5,8 @@ cd "$PROJECTNAME_ROOT"    # Start script in project root
 
 _install_if_not_exists () {
 	if [[ ! `which ${1}` ]]; then
-		echo ${2}
+		echo "	install ${1}"
+		echo "		${2}"
 		${2}
 	fi
 }
