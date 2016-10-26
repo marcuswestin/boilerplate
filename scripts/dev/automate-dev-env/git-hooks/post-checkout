@@ -5,5 +5,5 @@ cd "$PROJECTNAME_ROOT"    # Start script in project root
 
 # This hook is called after `git checkout` (e.g `git checkout -b feature-branch` or `git checkout master`)
 
-echo "*** misc/automate/git-hooks/post-checkout: RUN setup-tools.sh"
-bash $PROJECTNAME_ROOT/misc/automate/setup-tools.sh
+echo "*** scripts/dev/automate-dev-env/git-hooks/post-checkout: TODO"
+# bash $PROJECTNAME_ROOT/scripts/dev/automate-dev-env/setup-tools.sh

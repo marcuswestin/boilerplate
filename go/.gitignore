@@ -2,3 +2,7 @@ pkg
 bin
 src/golang.org
 src/github.com
+src/gitlab.com
+src/gopkg.in
+src/go.pedge.io
+vendor

@@ -5,5 +5,5 @@ cd "$PROJECTNAME_ROOT"    # Start script in project root
 
 # This hook is called on `git commit -m "commit msg"`. If it exits with an error, the commit cancels.
 
-echo "*** misc/automate/git-hooks/pre-commit RUN TESTS"
-bash $PROJECTNAME_ROOT/scripts/test/pre-commit.sh
+echo "*** scripts/dev/automate-dev-env/git-hooks/pre-commit: TODO"
+# bash $PROJECTNAME_ROOT/scripts/test/pre-commit.sh

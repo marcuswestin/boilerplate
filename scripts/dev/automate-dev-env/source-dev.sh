@@ -28,8 +28,8 @@ _prefix_if_not_contains () {
 	fi
 }
 
-# ProjectName
-_set_if_not_equal PS1 "\n<ProjectName> \w λ "
+# projectname
+_set_if_not_equal PS1 "\n<projectname> \w λ "
 _set_if_not_equal PROJECTNAME_ROOT `pwd`
 # Brew
 _postfix_if_not_contains PATH "/usr/local/bin"
@@ -48,4 +48,4 @@ _set_if_not_equal ANDROID_HOME "/usr/local/opt/android-sdk"
 _prefix_if_not_contains PATH "${ANDROID_HOME}/tools"
 _prefix_if_not_contains PATH "${ANDROID_HOME}/platform-tools"
 # Install tools
-./misc/automate/setup-tools.sh
+./scripts/dev/automate-dev-env/setup-tools.sh

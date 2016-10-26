@@ -5,14 +5,13 @@ cd `dirname $FILEPATH`
 cd `git rev-parse --show-toplevel`
 PROJECTNAME_ROOT=`pwd`
 
-bold=$(tput bold)
-normal=$(tput sgr0)
-
 echo "
-# ProjectName stuff
-alias projectname=\"cd $PROJECTNAME_ROOT && source misc/automate/source-dev.sh\"
+# PROJECTNAME
+alias projectname=\"cd $PROJECTNAME_ROOT && source scripts/dev/automate-dev-env/source-dev.sh\"
 " >> ~/.bash_profile
 
+bold=$(tput bold)
+normal=$(tput sgr0)
 echo "
 	Setup done in $PROJECTNAME_ROOT.
 	Please quite all terminal windows.
