@@ -3,6 +3,8 @@ require('./globals')
 // App UI
 /////////
 
+alert(require('foo'))
+
 var MobileApp = AutoReact.createClass({
   _handleNavigationRequest: function () {
     this.refs.nav.push({
