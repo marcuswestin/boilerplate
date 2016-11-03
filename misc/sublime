@@ -1,3 +1,8 @@
 #!/bin/bash
 
-open "$PROJECTNAME_ROOT/misc/sublime.sublime-project"
+if [ -z "$PROJECTNAME_ROOT" ]; then
+	echo "First run \`projectname\`"
+	exit -1
+fi
+
+open --new -a "Sublime Text" --fresh --args $PROJECTNAME_ROOT/misc/sublime.sublime-project
