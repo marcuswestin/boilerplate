@@ -1,6 +1,7 @@
-set -e
-trap 'kill -HUP 0' SIGINT # Kill sub-processes when we're killed (projectname-api-server)
-trap 'kill -HUP 0' EXIT   # Ditto when we're done
+#!/bin/bash
+source "$OSTRAA_ROOT/scripts/_boilerplates/base-bash-include.sh"
 
-# cd ${PROJECTNAME_ROOT}/js/projectname && ./node_modules/.bin/flow check
-node --harmony-destructuring ${PROJECTNAME_ROOT}/js/projectname/tests/all.js
+trap 'kill -HUP 0' EXIT   # Kill sub-processes when we exit
+
+# cd js/projectname && ./node_modules/.bin/flow check
+node --harmony-destructuring js/projectname/tests/all.js
