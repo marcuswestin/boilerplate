@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$OSTRAA_ROOT/scripts/_boilerplates/base-bash-include.sh"
+source "$PROJECTNAME_ROOT/scripts/_boilerplates/base-bash-include.sh"
 
 cd js && ./node_modules/.bin/budo 'apps/app-bootstraps/web-desktop-app-bootstrap.js' \
 	--dir ../../ \

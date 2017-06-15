@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$OSTRAA_ROOT/scripts/_boilerplates/base-bash-include.sh"
+source "$PROJECTNAME_ROOT/scripts/_boilerplates/base-bash-include.sh"
 
 trap 'kill -HUP 0' EXIT   # Kill sub-processes when we exit
 

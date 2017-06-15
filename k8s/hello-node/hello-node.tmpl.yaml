@@ -1,0 +1,47 @@
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: hello-node
+spec:
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 1
+  template:
+    metadata:
+      labels:
+        app: hello-node
+        role: server
+      annotations:
+        time: "{{ TIME }}"
+        git-sha: "{{ GIT-SHA }}"
+        whoami: "{{ WHOAMI }}"
+    spec:
+      containers:
+      - name: hello-node
+        image: "{{ IMAGE }}"
+        ports:
+        - containerPort: 30001
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-node-service
+  labels:
+    app: hello-node
+spec:
+  type: NodePort
+  ports:
+    - port: 30001
+      nodePort: 30001
+      name: http
+    # - port: 443
+    #   nodePort: 30443
+    #   name: https
+  selector:
+    app: hello-node
+    role: server
