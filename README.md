@@ -1,10 +1,10 @@
-ProjectName
-======
+PROJECTNAME
+===========
 
 1: Change project name
 ----------------------
 
-Replace ProjectName, projectname, and PROJECTNAME in all files with your project name, e.g "FooBarCat, foobarcat, FOOBARCAT"
+Replace projectname and PROJECTNAME in all files with your project name, e.g "foobarcat, FOOBARCAT"
 
 2: Setup development
 --------------------
