@@ -1,1 +1,0 @@
-module.exports = 'hello from js/foo/foo.js'

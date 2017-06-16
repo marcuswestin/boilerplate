@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: hello-node
-        image: "{{ IMAGE }}"
+        image: examples/hello-node:{{ IMAGE_TAG }}
         ports:
         - containerPort: 30001
 
@@ -39,9 +39,6 @@ spec:
     - port: 30001
       nodePort: 30001
       name: http
-    # - port: 443
-    #   nodePort: 30443
-    #   name: https
   selector:
     app: hello-node
     role: server
