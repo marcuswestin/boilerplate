@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"examples/conf"
 	"examples/grpc-echo"
 	"log"
 	"os"
@@ -15,8 +16,8 @@ func main() {
 		os.Exit(1)
 	}
 
-	echoHost := env("GRPC_ECHO_SERVER_SERVICE_HOST", "localhost")
-	echoPort := env("GRPC_ECHO_SERVER_SERVICE_PORT", "9090")
+	echoHost := conf.Get("GRPC_ECHO_SERVER_SERVICE_HOST", "localhost")
+	echoPort := conf.Get("GRPC_ECHO_SERVER_SERVICE_PORT", "9090")
 	run(echoHost+":"+echoPort, os.Args[1])
 }
 
@@ -30,18 +31,9 @@ func run(echoAddress, name string) {
 
 	c := echo.NewEchoClient(conn)
 
-	echoRes, err := c.Greet(context.Background(), &echo.GreetReq{Name: name})
+	echoRes, err := c.Ping(context.Background(), &echo.PingReq{Ping: name})
 	if err != nil {
 		log.Fatalf("Echo service returned error: %v", err)
 	}
-	log.Printf("Response: %s", echoRes.Greeting)
-
-}
-
-func env(key, defaultValue string) (resultValue string) {
-	defer func() { log.Println("config: " + key + "=" + resultValue) }()
-	if value := os.Getenv(key); value != "" {
-		return value
-	}
-	return defaultValue
+	log.Printf("Response: %s", echoRes.Pong)
 }

@@ -5,4 +5,5 @@ src/github.com
 src/gitlab.com
 src/gopkg.in
 src/go.pedge.io
+src/google.golang.org
 vendor

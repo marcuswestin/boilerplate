@@ -1,0 +1,74 @@
+syntax = "proto3";
+
+package db;
+
+message Account {
+	// string created_time = 1;
+	int64 account_id = 2;
+	int64 company_id = 3;
+	string external_account_id = 4;
+	bytes account_data = 5;
+	string phone_number = 6;
+	string email_address = 7;
+	string full_name = 8;
+}
+
+message Company {
+	// string created_time = 1;
+	int64 company_id = 2;
+	string company_marker = 3;
+	string company_name = 4;
+}
+
+message AccountLookup {
+    // string created_time = 1;
+    AccountLookupFieldType field_type = 2;
+    string field_value = 3;
+    int64 account_id = 4;
+	// string field_stem = ;
+}
+
+enum AccountLookupFieldType {
+	ACCOUNT_LOOKUP_FIELD_TYPE_NONW = 0;
+	FIRST_NAME = 1;
+	MIDDLE_NAMES = 2;
+	LAST_NAME = 3;
+	PHONE_NUMBER = 4;
+	EMAIL_ADDRESS = 5;
+}
+
+message AccountInvite {
+	int64 account_id = 1;
+	string secret = 2;
+	bool claimed = 3;
+}
+
+
+enum FunnelStep {
+	FUNNEL_STEP_NONE = 0;
+	ACCOUNT_IMPORTED = 1;
+	INVITE_SENT = 2;
+	INVITE_VIEWED = 3;
+	ENROLLED = 4;
+	ACCOUNT_VIEWED = 5;
+	CERT_VIEWED = 6;
+	BENEFICIARY_ADDED = 7;
+	CLAIM_MADE = 8;
+	CLAIM_PAID = 9;
+}
+
+// message FunnelStep {
+// 	FunnelStepType type = 1;
+// 	int64 account_id = 2;
+// }
+message FunnelStats {
+	int64 account_imported = 1;
+	int64 invite_sent = 2;
+	int64 invite_viewed = 3;
+	int64 enrolled = 4;
+	int64 account_viewed = 5;
+	int64 cert_viewed = 6;
+	int64 beneficiary_added = 7;
+	int64 claim_made = 8;
+	int64 claim_paid = 9;
+}

@@ -1,9 +1,0 @@
-#!/bin/bash
-set -e                    # Always die on error
-trap 'kill -HUP 0' SIGINT # Kill sub-processes when we're killed
-cd "$PROJECTNAME_ROOT"    # Start script in project root
-
-# This hook is called after `git checkout` (e.g `git checkout -b feature-branch` or `git checkout master`)
-
-echo "*** scripts/dev/automate-dev-env/git-hooks/post-checkout: TODO"
-# bash $PROJECTNAME_ROOT/scripts/dev/automate-dev-env/setup-tools.sh

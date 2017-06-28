@@ -3,13 +3,13 @@ syntax = "proto3";
 package echo;
 
 service Echo {
-  rpc Greet (GreetReq) returns (GreetRes) {}
+  rpc Ping (PingReq) returns (PingRes) {}
 }
 
-message GreetReq {
-  string name = 1;
+message PingReq {
+  string ping = 1;
 }
 
-message GreetRes {
-  string greeting = 1;
+message PingRes {
+  string pong = 1;
 }

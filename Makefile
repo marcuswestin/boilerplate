@@ -1,10 +1,8 @@
-
-all: test test-race lint
-test: test-go
-lint: lint-go
+test:
+	bash tests/run-all.sh
 	
-# Go
-####
+# Go package testing
+####################
 GO_PACKAGES := projectname/...
 test-go: vet-go
 	go test -p 1 -v ${GO_PACKAGES}

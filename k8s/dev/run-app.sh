@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$PROJECTNAME_ROOT/scripts/_boilerplates/base-bash-include-quiet.sh"
+source "$PROJECTNAME_ROOT/dev/_setup/boilerplates/base-bash-include-quiet.sh"
 
 # Check input
 #############

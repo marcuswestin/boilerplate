@@ -1,0 +1,25 @@
+{
+	"settings": {
+		"tab_size": 4,
+		// "translate_tabs_to_spaces": true,
+		"detect_indentation": true,
+		"use_tab_stops": true, // use_tab_stops will make tab and backspace insert/delete up to the next tab stop
+	},
+	"folders": [{}
+		, { "name":"projectname",       "path":"..", "folder_exclude_patterns":["*"] }
+		// Scripts
+		, { "name": "dev",              "path": "../dev" }
+		// Apps & Kuberneters
+		, { "name": "k8s",              "path": "../k8s" }
+		// JS
+		, { "name": "js/examples",      "path": "../js/examples", "folder_exclude_patterns": ["node_modules"] }
+		// Go
+		, { "name": "go/examples",      "path": "../go/src/examples", "folder_exclude_patterns": ["vendor"] }
+		// Tests
+		, { "name": "tests",            "path": "../tests", "folder_exclude_patterns": ["node_modules", "proto"] }
+		// SQL
+		, { "name": "sql",              "path": "../sql" }
+		// Python
+		, { "name": "py",               "path": "../py" }
+	]
+}

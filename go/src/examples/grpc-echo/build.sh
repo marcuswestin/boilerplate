@@ -1,11 +1,13 @@
 #!/bin/bash
-source "$PROJECTNAME_ROOT/scripts/_boilerplates/base-bash-include.sh"
+source "$PROJECTNAME_ROOT/dev/_setup/boilerplates/base-bash-include.sh"
 
 cd_bash_source $BASH_SOURCE
 
 IMAGE_TAG=${1?"Usage: $0 <image tag>"}
 
-dep ensure -update
+if [ ! -d vendor ]; then
+	dep ensure
+fi
 
 bash ./proto-gen.sh
 
