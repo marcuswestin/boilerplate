@@ -1,7 +1,0 @@
-#!/bin/bash
-source "$PROJECTNAME_ROOT/dev/_setup/boilerplates/base-bash-include.sh"
-
-# This hook is called on `git commit -m "commit msg"`. If it exits with an error, the commit cancels.
-
-echo "*** dev/_setup/git-hooks/pre-commit: TODO"
-# bash $PROJECTNAME_ROOT/dev/test/pre-commit.sh

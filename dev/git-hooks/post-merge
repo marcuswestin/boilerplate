@@ -1,4 +1,5 @@
 #!/bin/bash
 source "$PROJECTNAME_ROOT/dev/boilerplates/base-bash-include.sh"
 
-kubectl config view | grep namespace:
+# This hook is called after a merge (e.g if `git pull` contains changes).
+

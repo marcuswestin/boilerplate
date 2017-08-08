@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source "$PROJECTNAME_ROOT/dev/_setup/boilerplates/base-bash-include-quiet.sh"
+source "$PROJECTNAME_ROOT/dev/boilerplates/base-bash-include.sh"
 
 cleanup_on_exit
 

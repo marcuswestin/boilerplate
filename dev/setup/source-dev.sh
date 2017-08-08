@@ -31,6 +31,7 @@ _prefix_if_not_contains () {
 # projectname
 _set_if_not_equal PS1 "\n<projectname> \w λ "
 _set_if_not_equal PROJECTNAME_ROOT `pwd`
+_set_if_not_equal PROJECTNAME_NAME "projectname"
 
 # Brew
 _postfix_if_not_contains PATH "/usr/local/bin"
@@ -61,4 +62,4 @@ _set_if_not_equal DOCKER_HOST "tcp://`ksolo ip`:2375"
 # eval $(minikube docker-env)
 
 # Install tools
-./dev/_setup/setup-tools.sh
+./dev/setup/setup-tools.sh

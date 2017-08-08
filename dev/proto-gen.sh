@@ -1,5 +1,5 @@
 #!/bin/bash
-source "$PROJECTNAME_ROOT/dev/_setup/boilerplates/base-bash-include.sh"
+source "$PROJECTNAME_ROOT/dev/boilerplates/base-bash-include.sh"
 
 ALL_PROTOS_DIR=$PROJECTNAME_ROOT/build/proto
 rm -rf $ALL_PROTOS_DIR

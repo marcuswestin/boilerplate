@@ -1,0 +1,4 @@
+#!/bin/bash
+source "$PROJECTNAME_ROOT/dev/boilerplates/base-bash-include.sh"
+
+# This hook is called after `git checkout` (e.g `git checkout -b feature-branch` or `git checkout master`)

@@ -6,12 +6,14 @@ PROJECTNAME
 
 Replace projectname, and PROJECTNAME in all files with your project name, e.g "foobarcat, FOOBARCAT"
 
+Also, rename dev/sublime-PROJECTNAME* files (and any other files that match "PROJECTNAME")
+
 2: Setup development
 --------------------
 
 Run setup script:
 
-	bash dev/_setup/one-time-setup.sh
+	bash dev/setup/one-time-setup.sh
 
 Close window, open new terminal. From now on, to enter and activate project space:
 

@@ -1,0 +1,5 @@
+#!/bin/bash
+source "$PROJECTNAME_ROOT/dev/boilerplates/base-bash-include.sh"
+
+# This hook is called on `git commit -m "commit msg"`. If it exits with an error, the commit cancels.
+

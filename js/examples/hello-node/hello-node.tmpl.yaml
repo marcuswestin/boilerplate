@@ -24,7 +24,12 @@ spec:
       - name: hello-node
         image: examples/hello-node:{{ IMAGE_TAG }}
         ports:
-        - containerPort: 30001
+        - containerPort: 30002
+
+
+
+
+
 
 ---
 apiVersion: v1
@@ -36,8 +41,8 @@ metadata:
 spec:
   type: NodePort
   ports:
-    - port: 30001
-      nodePort: 30001
+    - port: 30002
+      nodePort: 30002
       name: http
   selector:
     app: hello-node

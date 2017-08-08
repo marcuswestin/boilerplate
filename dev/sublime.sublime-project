@@ -6,7 +6,7 @@
 		"use_tab_stops": true, // use_tab_stops will make tab and backspace insert/delete up to the next tab stop
 	},
 	"folders": [{}
-		, { "name":"projectname",       "path":"..", "folder_exclude_patterns":["*"] }
+		, { "name":".",                 "path":"..", "folder_exclude_patterns":["*"] }
 		// Scripts
 		, { "name": "dev",              "path": "../dev" }
 		// Apps & Kuberneters

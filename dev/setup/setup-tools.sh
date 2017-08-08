@@ -20,7 +20,7 @@ _install_if_not_exists 'protoc-gen-go' 'go get -a github.com/golang/protobuf/pro
 
 
 # Git hooks
-for file in dev/_setup/git-hooks/*; do
+for file in dev/git-hooks/*; do
 	if [[ ! -f .git/hooks/`basename $file` ]]; then
 		echo "symlink .git/hooks/`basename $file`"
 		ln -snf ../../$file .git/hooks/`basename $file`

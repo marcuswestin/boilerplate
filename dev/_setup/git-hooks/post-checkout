@@ -1,7 +1,0 @@
-#!/bin/bash
-source "$PROJECTNAME_ROOT/dev/_setup/boilerplates/base-bash-include.sh"
-
-# This hook is called after `git checkout` (e.g `git checkout -b feature-branch` or `git checkout master`)
-
-echo "*** dev/_setup/git-hooks/post-checkout: TODO"
-# bash $PROJECTNAME_ROOT/dev/_setup/setup-tools.sh

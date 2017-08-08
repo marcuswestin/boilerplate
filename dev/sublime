@@ -5,4 +5,4 @@ if [ -z "$PROJECTNAME_ROOT" ]; then
 	exit -1
 fi
 
-open --new -a "Sublime Text" --fresh --args $PROJECTNAME_ROOT/dev/sublime.sublime-project
+open --new -a "Sublime Text" --fresh --args $PROJECTNAME_ROOT/dev/projectname.sublime-project
