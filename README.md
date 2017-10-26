@@ -1,14 +1,12 @@
 PROJECTNAME
 ===========
 
-1: Change project name
+0: Change project name
 ----------------------
 
-Replace projectname, and PROJECTNAME in all files with your project name, e.g "foobarcat, FOOBARCAT"
+Replace projectname, and PROJECTNAME in all files with your project name (e.g projectname -> foobarcat, PROJECTNAME -> FOOBARCAT).
 
-Also, rename dev/sublime-PROJECTNAME* files (and any other files that match "PROJECTNAME")
-
-2: Setup development
+1: Setup development
 --------------------
 
 Run setup script:
@@ -17,9 +15,9 @@ Run setup script:
 
 Close window, open new terminal. From now on, to enter and activate project space:
 
-	projectname
+	enter-projectname
 
-3: Kubernetes
+2: Kubernetes
 -------------
 
 Nodejs example:
