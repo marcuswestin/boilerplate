@@ -1,7 +1,7 @@
 # Go to repo root
 _source_path=`pwd`/${BASH_SOURCE[0]}
-cd `dirname $_source_path`
-cd `git rev-parse --show-toplevel`
+cd `dirname $_source_path`/../..
+# cd `git rev-parse --show-toplevel` # Does not work with symlink-based folders
 
 _set_if_not_equal () {
 	if [[ "${!1}" != "$2" ]]; then
